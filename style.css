@@ -444,6 +444,10 @@ footer .line-footer p a {
     color: #fff;
 }
 
+#logo-footer {
+    width: 180px;
+}
+
 @media screen and (max-width: 1020px) {
     .flex {
         flex-direction: column;
