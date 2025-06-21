@@ -14,13 +14,13 @@ body {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 2%; /* Adiciona um padding nas laterais */
+    padding: 0 2%;
 }
 
 .flex {
     display: flex;
-    align-items: center; /* Alinha itens verticalmente */
-    justify-content: center; /* Centraliza itens horizontalmente */
+    align-items: center;
+    justify-content: center;
 }
 
 .logobrilho {
@@ -29,21 +29,21 @@ body {
 }
 
 @keyframes brilhoGrande {
-  from {
-    filter: drop-shadow(0 0 20px #00f6ff)
-            drop-shadow(0 0 40px #00f6ff);
-  }
-  to {
-    filter: drop-shadow(0 0 40px #00f6ff)
-            drop-shadow(0 0 80px #00f6ff);
-  }
+    from {
+        filter: drop-shadow(0 0 20px #00D0FE)
+                drop-shadow(0 0 40px #00D0FE);
+    }
+    to {
+        filter: drop-shadow(0 0 40px #00D0FE)
+                drop-shadow(0 0 80px #00D0FE);
+    }
 }
 
 .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00FF08;
+    background-color: #00D0FE;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -57,12 +57,12 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #00FF08;
+    color: #00D0FE;
 }
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #00ff08;
+    box-shadow: 0px 0px 8px #00D0FE;
     transform: scale(1.05);
 }
 
@@ -99,7 +99,7 @@ header nav.menu-desktop ul li {
 }
 
 .btn-abrir-menu {
-    display: none; /* Esconde o botão de abrir menu por padrão */
+    display: none;
 }
 
 .menu-mobile {
@@ -109,20 +109,25 @@ header nav.menu-desktop ul li {
     top: 0;
     right: 0;
     z-index: 99999;
-    width: 0%; /* Menu mobile inicia fechado */
+    width: 0%;
     overflow: hidden;
     transition: .5s;
 }
 
 .menu-mobile .btn-fechar {
     padding: 20px 5%;
-    text-align: right; /* Alinha o botão de fechar à direita */
+    text-align: right;
 }
 
 .menu-mobile .btn-fechar i {
-    color: #00FF08;
+    color: #00D0FE;
     font-size: 30px;
     cursor: pointer;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #00D0FE;
+    color: #000;
 }
 
 .menu-mobile nav ul {
@@ -137,17 +142,11 @@ header nav.menu-desktop ul li {
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
-    display: block; /* Para que cada link ocupe a largura total */
+    display: block;
 }
 
-.menu-mobile nav ul li a:hover {
-    background-color: #00FF08;
-    color: #000;
-}
-
-/* Classe JavaScript para abrir o menu */
 .menu-mobile.abrir-menu {
-    width: 70%; /* Largura do menu mobile quando aberto */
+    width: 70%;
 }
 
 .overlay-menu {
@@ -158,49 +157,36 @@ header nav.menu-desktop ul li {
     top: 0;
     left: 0;
     z-index: 88888;
-    display: none; /* Overlay inicia escondido */
+    display: none;
 }
 
-/* Quando o menu mobile estiver aberto, o overlay aparece */
 .menu-mobile.abrir-menu ~ .overlay-menu {
     display: block;
 }
 
-/* --- MEDIA QUERIES --- */
-
-/* Esconde o menu desktop e o botão de contato em telas pequenas */
-/* e mostra o botão do menu mobile */
-@media screen and (max-width: 1050px) { /* Defina aqui o ponto de quebra, 768px é comum */
+/* MEDIA QUERIES */
+@media screen and (max-width: 1050px) {
     .menu-desktop,
     .btn-contato {
-        display: none; /* Esconde o menu desktop e o botão de contato */
+        display: none;
     }
 
     .btn-abrir-menu {
-        display: block; /* Mostra o botão para abrir o menu mobile */
+        display: block;
     }
 
     .btn-abrir-menu i {
-        color: #00FF08;
+        color: #00D0FE;
         font-size: 40px;
         cursor: pointer;
     }
 
     header .interface {
-        justify-content: space-between; /* Mantém logo e botão do menu nas pontas */
-    }
-
-    /* Ajustes para o logo em telas menores, se necessário */
-    header .logo {
-        position: relative; /* Ajusta posicionamento do logo */
-        z-index: 100000; /* Garante que o logo fique acima do menu mobile */
+        justify-content: space-between;
     }
 }
 
-/* Você pode adicionar mais media queries se precisar de mais pontos de quebra */
-/* @media screen and (max-width: 480px) { ... } */
-
-/* ESTILO DO TOPO DO SITE */
+/* TOPO DO SITE */
 section.topo-do-site {
     padding: 40px 4%;
     height: 85vh;
@@ -219,7 +205,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #00FF08;
+    color: #00D0FE;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -232,22 +218,15 @@ section.topo-do-site .flex {
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-
 @keyframes flutuar {
-    0% {
-        top: 0;
-    }
-
-    100% {
-        top: 30px;
-    }
+    0% { top: 0; }
+    100% { top: 30px; }
 }
 
-/* ESTILO DAS ESPECIALIDADES */
-
+/* ESPECIALIDADES */
 section.especiliadades {
     padding: 80px 4%;
-    background: url('images/pexels-cottonbro-4069293.jpg')no-repeat center center fixed;
+    background: url('images/pexels-cottonbro-4069293.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -260,7 +239,7 @@ section.especiliadades::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Escurece a imagem — ajuste a opacidade se quiser */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -285,12 +264,11 @@ section.especiliadades .flex {
 .especiliadades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 40px #ffffff78;
-    
 }
 
 .especiliadades .especialidades-box i {
     font-size: 70px;
-    color: #00FF08;
+    color: #00D0FE;
 }
 
 .especiliadades .especialidades-box h3 {
@@ -298,7 +276,7 @@ section.especiliadades .flex {
     margin: 15px 0;
 }
 
-/* ESTILO DO SOBRE */
+/* SOBRE */
 .imgsomos {
     width: 300px;
     height: 450px;
@@ -324,7 +302,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #00FF08;
+    color: #00D0FE;
     display: block;
 }
 
@@ -338,14 +316,14 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00FF08;
+    background-color: #00D0FE;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
 }
 
-/* ESTILO DO PORTFÓLIO */
+/* PORTFÓLIO */
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
@@ -393,7 +371,7 @@ section.portfolio .flex {
     opacity: 1;
 }
 
-/* ESTILO DO FORMULÁRIO DE CONTATO */
+/* FORMULÁRIO */
 section.formulario {
     padding: 80px 4%;
 }
@@ -432,15 +410,14 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
-    background-color: #00FF08;
+    background-color: #00D0FE;
     color: #000;
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
 }
 
-/* ESTILO DO RODAPÉ */
-
+/* RODAPÉ */
 footer {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
@@ -455,11 +432,11 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #00FF08;
+    border-top: 2px solid #00D0FE;
 }
 
 footer .line-footer p i {
-    color: #00FF08;
+    color: #00D0FE;
     font-size: 22px;
 }
 
@@ -468,13 +445,11 @@ footer .line-footer p a {
 }
 
 @media screen and (max-width: 1020px) {
-
-    /* CLASSES GERAIS */
     .flex {
         flex-direction: column;
     }
 
-    .topo-do-site .flex{
+    .topo-do-site .flex {
         flex-direction: column-reverse;
     }
 
@@ -483,13 +458,10 @@ footer .line-footer p a {
         line-height: 30px;
     }
 
-    /* CABEÇALHO */
     .menu-desktop,
     .btn-contato {
         display: none;
     }
-
-    /* TOPO DO SITE */
 
     section.topo-do-site .flex {
         gap: 40px;
@@ -507,12 +479,10 @@ footer .line-footer p a {
         width: 100%;
     }
 
-    /* ESPECIALIDADES */
     section.especiliadades {
         padding: 40px 8%;
     }
 
-    /* SOBRE */
     section.sobre {
         padding: 80px 8%;
     }
@@ -522,16 +492,15 @@ footer .line-footer p a {
         line-height: 35px;
         text-align: center;
     }
-    
-    .btn-social{
+
+    .btn-social {
         text-align: center;
     }
 
-    .img-sobre img{
+    .img-sobre img {
         width: 100%;
     }
 
-    /* PORTFÓLIO */
     section.portfolio {
         padding: 80px 8%;
     }
@@ -541,12 +510,11 @@ footer .line-footer p a {
         max-width: 360px;
         margin: 0 auto;
     }
-    
+
     section.portfolio .flex {
-       gap: 60px;
+        gap: 60px;
     }
 
-    /* RODAPÉ */
     footer .flex {
         flex-direction: column;
         gap: 30px;
