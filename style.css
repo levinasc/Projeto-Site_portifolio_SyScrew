@@ -11,15 +11,15 @@ html {
 }
 
 body {
-    background-color: #000000cc;
+    background-color: #000000b7;
     height: 100vh;
-    padding-top: 280px; /* Compensação pro header fixo */
+    padding-top: 320px; /* Compensação pro header fixo */
 }
 
 .interface {
     max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2%;
+    margin: 9px auto;
+    padding: 33px 2%;
 }
 
 .flex {
@@ -77,8 +77,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 170px;
-    background-color: #00000050;
+    height: 100px;
+    background-color: #0000003f;
     z-index: 1000;
     
     backdrop-filter: blur(20px); /* opcional - desfoque de fundo */
@@ -94,6 +94,7 @@ header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100px;
 }
 
 header a {
