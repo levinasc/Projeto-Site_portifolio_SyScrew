@@ -279,8 +279,9 @@ section.especiliadades .flex {
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
-    transition: .2s;
+    transition: .1s;
     background-color: rgba(255, 255, 255, 0.199);
+   
 }
 
 .especiliadades .especialidades-box:hover {
