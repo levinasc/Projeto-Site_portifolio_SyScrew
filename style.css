@@ -18,6 +18,7 @@ body {
 
 .interface {
     max-width: 1280px;
+    max-height: ;
     margin: 9px auto;
     padding: 33px 2%;
 }
@@ -29,7 +30,7 @@ body {
 }
 
 .logobrilho {
-    width: 230px;
+    width: 160px;
     animation: brilhoGrande 2s infinite alternate;
 }
 
@@ -78,7 +79,7 @@ header {
     left: 0;
     padding-right: 33px;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #0000003f;
     z-index: 1000;
     
@@ -95,7 +96,7 @@ header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
+    height: 69px;
 }
 
 header a {
@@ -209,9 +210,20 @@ header nav.menu-desktop ul li {
 }
 
 /* TOPO DO SITE */
+#cardTopo {
+    color: #fff;
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.199);
+
+}
+
 section.topo-do-site {
     padding: 40px 4%;
-    height: 85vh;
+    height: 730px;
 }
 
 section.topo-do-site .flex {
@@ -238,6 +250,7 @@ section.topo-do-site .flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
+    
 }
 
 @keyframes flutuar {
