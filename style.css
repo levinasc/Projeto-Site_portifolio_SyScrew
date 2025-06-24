@@ -13,7 +13,6 @@ html {
 body {
     background-color: #000000b7;
     height: 100vh;
-    padding-top: 320px; /* Compensação pro header fixo */
 }
 
 .interface {
@@ -89,7 +88,7 @@ header {
 #inicio {
     scroll-margin-top: 120px;
      position: relative;
-    top: -120px; /* sobe o conteúdo pra cima */
+    top: 0px; /* sobe o conteúdo pra cima */
 }
 
 header>.interface {
@@ -210,44 +209,173 @@ header nav.menu-desktop ul li {
 }
 
 /* TOPO DO SITE */
-#cardTopo {
-    color: #fff;
-    width: 100%;
-    height: 90%;
-    border-radius: 20px;
-    padding-left: 50px;
-    padding-bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.199);
-
-}
-
-section.topo-do-site {
-    padding: 40px 4%;
-    height: 730px;
-}
-
-section.topo-do-site .flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.topo-do-site h1 {
-    color: #fff;
-    font-size: 42px;
-    line-height: 40px;
-}
-
-.topo-do-site .txt-topo-site h1 span {
+span {
     color: #00D0FE;
 }
 
-.topo-do-site .txt-topo-site p {
-    color: #fff;
-    margin: 40px 0;
+
+
+.paginainicial {
+    height: 100vh;
+    padding-top: 120px;               /* Espaço para não colar no header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient(rgba(88, 116, 238, 0.705), rgb(10, 1, 1)), url(images/1\ \(4\).jpg) no-repeat center center / cover;
 }
 
-.topo-do-site .img-topo-site img {
+
+
+.card {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.205); /* Transparência do card */
+    backdrop-filter: blur(8px); /* Efeito de desfoque atrás, opcional */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-texto {
+    flex: 1;
+    color: #fff; /* Texto em branco, ajuste conforme fundo */
+}
+
+.card-texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.card-texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.card-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% { top: 0; }
+    100% { top: 30px; }
+}
+
+.card-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: canto arredondado na imagem */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-imagem, .card-texto {
+        flex: none;
+        width: 100%;
+    }
+
+    .card-imagem img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}
+
+.glitch {
+    position: relative;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    color: #00D0FE;
+    clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+    animation: glitchTop 3s infinite linear alternate-reverse;
+    color: #00f2fe;
+}
+
+.glitch::after {
+    animation: glitchBottom 3s infinite linear alternate-reverse;
+    color: #00d0fe;
+}
+
+@keyframes glitchTop {
+    0% {
+        clip: rect(0, 9999px, 0, 0);
+        transform: translate(0px, 0px);
+    }
+    10% {
+        clip: rect(10px, 9999px, 20px, 0);
+        transform: translate(-2px, -2px);
+    }
+    20% {
+        clip: rect(30px, 9999px, 40px, 0);
+        transform: translate(2px, -1px);
+    }
+    30% {
+        clip: rect(50px, 9999px, 60px, 0);
+        transform: translate(-1px, 1px);
+    }
+    100% {
+        clip: rect(0, 9999px, 0, 0);
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes glitchBottom {
+    0% {
+        clip: rect(0, 9999px, 0, 0);
+        transform: translate(0px, 0px);
+    }
+    10% {
+        clip: rect(70px, 9999px, 80px, 0);
+        transform: translate(2px, 2px);
+    }
+    20% {
+        clip: rect(90px, 9999px, 100px, 0);
+        transform: translate(-2px, 1px);
+    }
+    30% {
+        clip: rect(110px, 9999px, 120px, 0);
+        transform: translate(1px, -1px);
+    }
+    100% {
+        clip: rect(0, 9999px, 0, 0);
+        transform: translate(0px, 0px);
+    }
+}
+
+
+
+
+/*.topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     
@@ -256,7 +384,7 @@ section.topo-do-site .flex {
 @keyframes flutuar {
     0% { top: 0; }
     100% { top: 30px; }
-}
+}*/
 
 /* ESPECIALIDADES */
 section.especiliadades {
@@ -274,7 +402,7 @@ section.especiliadades::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: #00000080;
     z-index: 1;
 }
 
