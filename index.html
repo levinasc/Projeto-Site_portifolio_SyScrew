@@ -199,7 +199,11 @@
 
 
     <script>
-    AOS.init();
+    AOS.init({
+    disable: function() {
+      return window.innerWidth < 768;  // Desativa o AOS para telas menores que 768px (celular)
+    }
+  });
     </script>
 
 </body>
