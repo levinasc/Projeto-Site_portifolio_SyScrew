@@ -225,7 +225,7 @@ span {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background:linear-gradient(rgba(22, 16, 100, 0.527), rgba(0, 0, 0, 0.815)), url(images/1\ \(1\).jpg) no-repeat center center / cover;
+    background:linear-gradient(rgba(22, 16, 100, 0.527), rgba(0, 0, 0, 0.815)), url(images/backgroundGrey2.jpg) no-repeat center center / cover;
 }
 
 
