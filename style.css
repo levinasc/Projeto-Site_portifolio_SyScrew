@@ -34,8 +34,8 @@ body {
 
 @keyframes brilhoGrande {
     from {
-        filter: drop-shadow(0 0 20px #00D0FE)
-                drop-shadow(0 0 40px #00D0FE);
+        filter: drop-shadow(0 0 10px #00D0FE)
+                drop-shadow(0 0 10px #00D0FE);
     }
     to {
         filter: drop-shadow(0 0 40px #00D0FE)
@@ -683,6 +683,10 @@ footer .line-footer p a {
     
     .interface {
         padding: 20px 18%; /* Ajusta o padding da interface para telas menores */
+    }
+
+    .cabecalho {
+        background-color: #53516D;
     }
 
 
