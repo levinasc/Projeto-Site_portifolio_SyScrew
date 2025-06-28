@@ -225,24 +225,24 @@ span {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background:linear-gradient(rgba(22, 16, 100, 0.527), rgba(0, 0, 0, 0.815)), url(images/backgroundGrey2.jpg) no-repeat center center / cover;
+    background: linear-gradient(rgba(43, 69, 139, 0.747),rgba(68, 58, 31, 0.575) ,rgba(0, 0, 0, 0.829)), url(images/backgroundGrey2.jpg) no-repeat center center / cover;
 }
 
-
-
 .card {
-   
+    
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.205); /* Transparência do card */
-    backdrop-filter: blur(8px); /* Efeito de desfoque atrás, opcional */
+    background-color: rgba(255, 255, 255, 0.034); /* Transparência do card */
+    backdrop-filter: blur(1px); /* Efeito de desfoque atrás, opcional */
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
 
 .card-texto {
     flex: 1;
