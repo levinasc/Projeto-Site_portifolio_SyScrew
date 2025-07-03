@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #000000b7;
+    background-color: #2A2A2A;
     height: 100vh;
 }
 
@@ -24,10 +24,11 @@ body {
 .flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 
 .logobrilho {
+    margin-right: 250px;
     width: 180px;
     animation: brilhoGrande 2s infinite alternate;
 }
@@ -93,7 +94,7 @@ header {
 header>.interface {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 69px;
 }
 
@@ -189,7 +190,7 @@ header nav.menu-desktop ul li {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1320px) {
     .menu-desktop,
     .btn-contato {
         display: none;
@@ -471,7 +472,7 @@ section.sobre .flex {
     transition: .2s;
 }
 
-/* PORTFÓLIO */
+/* PORTIFÓLIO */
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
@@ -537,12 +538,12 @@ form {
 form input,
 form textarea {
     width: 100%;
-    background-color: #242424;
+    background-color: #0c0c0c;
     border: 0;
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -697,6 +698,7 @@ footer .line-footer p a {
 
     /* REMOVER ANIMAÇÕES PARA MELHOR DESEMPENHO */
     .logobrilho {
+        margin-right: 0px;
         animation: none; /* Desativa a animação de brilho do logo */
         filter: none; /* Remove qualquer filtro residual */
     }
