@@ -28,7 +28,7 @@ body {
 }
 
 .logobrilho {
-    width: 160px;
+    width: 180px;
     animation: brilhoGrande 2s infinite alternate;
 }
 
