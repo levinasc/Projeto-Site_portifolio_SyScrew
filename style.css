@@ -296,7 +296,7 @@ span {
     top: 0;
     width: 100%;
     overflow: hidden;
-    color: #00D0FE;
+    color: #2d72da;
     clip: rect(0, 900px, 0, 0);
 }
 
@@ -596,6 +596,15 @@ footer .line-footer p a {
     width: 180px;
 }
 
+.copy {
+    color: white;
+    text-align: center;
+}
+
+.footercolor {
+    background-color: #0c0c0c48;
+}
+
 @media screen and (max-width: 1020px) {
     .flex {
         flex-direction: column-reverse;
@@ -686,7 +695,7 @@ footer .line-footer p a {
     }
 
     .cabecalho {
-        background-color: #53516D;
+        background-color: #00000071;
     }
 
 
@@ -720,7 +729,7 @@ footer .line-footer p a {
 
     /* REMOVER IMAGENS DE FUNDO PARA OTIMIZAÇÃO */
     .paginainicial {
-        background: linear-gradient(rgba(22, 16, 100, 0.527), rgba(0, 0, 0, 0.815)); /* Remove a imagem, mantendo o gradiente */
+        background: linear-gradient(rgba(223, 56, 56, 0.404) , rgba(75, 45, 45, 0.603) , rgba(0, 0, 0, 0.815)); /* Remove a imagem, mantendo o gradiente */
         height: auto; /* Permite que a altura se ajuste ao conteúdo */
         padding-top: 100px; /* Ajuste o padding superior se necessário */
     }
