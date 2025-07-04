@@ -356,20 +356,6 @@ span {
     }
 }
 
-
-
-
-/*.topo-do-site .img-topo-site img {
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-    
-}
-
-@keyframes flutuar {
-    0% { top: 0; }
-    100% { top: 30px; }
-}*/
-
 /* ESPECIALIDADES */
 section.especiliadades {
     padding: 80px 4%;
@@ -432,6 +418,7 @@ section.especiliadades .flex {
 
 section.sobre {
     padding: 80px 4%;
+    background: linear-gradient(rgba(5, 5, 5, 0.89),rgb(42, 42, 42));
 }
 
 section.sobre .flex {
@@ -522,6 +509,7 @@ section.portfolio .flex {
 /* FORMULÁRIO */
 section.formulario {
     padding: 80px 4%;
+   background: linear-gradient(#2A2A2A,rgba(41, 42, 43, 0.753),#292727ef ,#2A2A2A), url(images/Gemini_Generated_Image_r4yd62r4yd62r4yd.png) no-repeat center center / cover;
 }
 
 form {
@@ -568,7 +556,7 @@ form .btn-enviar input {
 /* RODAPÉ */
 footer {
     padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    /*box-shadow: 0 0 40px 10px #ffffff1d;*/
 }
 
 footer .flex {
@@ -602,7 +590,7 @@ footer .line-footer p a {
 }
 
 .footercolor {
-    background-color: #0c0c0c48;
+    background: linear-gradient(#2A2A2A,rgba(5, 5, 5, 0.89));
 }
 
 @media screen and (max-width: 1020px) {
