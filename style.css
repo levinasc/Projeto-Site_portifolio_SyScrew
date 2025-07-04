@@ -226,7 +226,7 @@ span {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(43, 69, 139, 0.747),rgba(68, 58, 31, 0.575) ,rgba(0, 0, 0, 0.829)), url(images/backgroundGrey2.jpg) no-repeat center center / cover;
+    background: linear-gradient(rgba(131, 52, 52, 0.925),rgba(80, 101, 160, 0.904) ,rgba(0, 0, 0, 0.911)), url(images/globe-internet.jpg) no-repeat center center / cover;
 }
 
 .card {
